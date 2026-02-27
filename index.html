@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Home Decor Showcase</title>
+
+<!-- META PIXEL -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', 'YOUR_PIXEL_ID'); // replace with your Pixel ID
+fbq('track', 'PageView');
+</script>
+
+<style>
+body { font-family: sans-serif; max-width: 800px; margin: auto; padding: 20px; }
+.product { border: 1px solid #ccc; padding: 15px; margin-bottom: 20px; }
+button { padding: 8px 12px; cursor: pointer; }
+img { width: 150px; display:block; margin-bottom: 10px; }
+</style>
+</head>
+<body>
+
+<h1>Home Decor Products</h1>
+
+<div class="product">
+  <img src="images/lamp.jpg" alt="Cozy Lamp">
+  <h2>Cozy Lamp</h2>
+  <button onclick="fbq('track', 'AddToCart', {content_name:'Cozy Lamp'})">Add to Cart</button>
+</div>
+
+<div class="product">
+  <img src="images/vase.jpg" alt="Minimal Vase">
+  <h2>Minimal Vase</h2>
+  <button onclick="fbq('track', 'AddToCart', {content_name:'Minimal Vase'})">Add to Cart</button>
+</div>
+
+<!-- Add the other 2 products similarly -->
+
+</body>
+</html>
